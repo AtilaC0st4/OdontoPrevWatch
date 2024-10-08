@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/noto_naskh_arabic</item>
+        <item>@font/noto_sans</item>
+        <item>@font/noto_sans_arabic_thin</item>
+    </array>
+</resources>
