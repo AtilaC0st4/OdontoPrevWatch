@@ -5,6 +5,99 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroud2"
     tools:context=".cadastroActivity">
+
+    <EditText
+        android:id="@+id/editTextText6"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Confirme sua senha"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+
+    <Button
+        android:id="@+id/btnEntre5"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#69E8FD"
+        android:text="Cadastre-se"
+        android:textColor="#033EA5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <Button
+        android:id="@+id/btnEntre6"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#69E8FD"
+        android:text="Voltar"
+        android:textColor="#033EA5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntre5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="319dp"
+        android:layout_height="143dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
