@@ -18,24 +18,9 @@
         app:srcCompat="@drawable/logo" />
 
     <Button
-        android:id="@+id/btnEntre"
+        android:id="@+id/btnAcessarCadastro"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_marginTop="76dp"
-        android:backgroundTint="#69E8FD"
-        android:text="Entre"
-        android:textColor="#033EA5"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btnEntre2"
-        android:layout_width="175dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="28dp"
         android:backgroundTint="#69E8FD"
         android:text="Cadastre-se"
         android:textColor="#033EA5"
@@ -44,8 +29,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnEntre"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAcessarLogin"
+        app:layout_constraintVertical_bias="0.282" />
 
     <TextView
         android:id="@+id/textView"
@@ -62,5 +47,19 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnAcessarLogin"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#69E7FC"
+        android:text="Login"
+        android:textColor="#033EA5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

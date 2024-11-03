@@ -1,5 +1,6 @@
 package com.example.odontoprev
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -21,6 +22,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         enableEdgeToEdge()
+
+        binding.btnAcessarLogin.setOnClickListener {
+
+            val intent = Intent(this, loginActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnAcessarCadastro.setOnClickListener {
+
+            val intent = Intent(this, cadastroActivity::class.java)
+            startActivity(intent)
+        }
 
 
 
