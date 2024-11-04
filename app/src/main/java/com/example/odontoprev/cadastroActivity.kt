@@ -21,6 +21,10 @@ class cadastroActivity : AppCompatActivity() {
         FirebaseAuth.getInstance()
     }
 
+    override fun onStart() {
+        super.onStart()
+        verificaUsuarioLogado()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -34,7 +38,6 @@ class cadastroActivity : AppCompatActivity() {
             finish()
         }
     }
-
 
     private fun cadastroUsuario() {
         val email = binding.editTxtLogin.text.toString()
@@ -60,5 +63,13 @@ class cadastroActivity : AppCompatActivity() {
 
             }
 
+    }
+
+    private fun verificaUsuarioLogado() {
+        val usuario = autenticacao.currentUser
+
+        if (usuario != null ){
+            startActivity(Intent(this,PrincipalActivity::class.java))
+        }
     }
 }

@@ -24,10 +24,32 @@ class loginActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        binding.btnEntrar.setOnClickListener {
+            logarUsuario()
+        }
 
         binding.btnVoltar.setOnClickListener {
             finish()
         }
+
+    }
+
+    private fun logarUsuario() {
+        val email = binding.editTxtLogin.text.toString()
+        val senha = binding.editTxtSenha.text.toString()
+
+        autenticacao.signInWithEmailAndPassword(email, senha)
+            .addOnSuccessListener { authResult ->
+                startActivity(Intent(this,PrincipalActivity::class.java))
+            }.addOnFailureListener { exception ->
+                val mensagemErro = exception.message
+                AlertDialog.Builder(this)
+                    .setTitle("ERRO")
+                    .setMessage("Error ao Logar ${mensagemErro}")
+                    .setPositiveButton("Fechar"){dialog,posicao->}
+                    .create().show()
+
+            }
 
     }
 

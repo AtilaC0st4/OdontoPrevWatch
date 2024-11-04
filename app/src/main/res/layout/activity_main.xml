@@ -30,13 +30,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnAcessarLogin"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="288dp"
         android:layout_height="187dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="92dp"
         android:fontFamily="@font/noto_sans"
         android:text="Cuide do seu sorriso com acompanhamento personalizado e preventivo. Cadastre-se e monitore sua saúde bucal com a OdontoPrev."
         android:textAlignment="center"
@@ -52,7 +52,7 @@
         android:id="@+id/btnAcessarLogin"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="104dp"
         android:backgroundTint="#69E7FC"
         android:text="Login"
         android:textColor="#033EA5"
